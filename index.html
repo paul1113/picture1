@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<title>一款基于jQuery编写的jquery图片3D旋转切换 - jquery特效分享</title>
+<link href="css/demos.css" rel="stylesheet" />
+<style>
+			ul {
+				list-style: none;
+				padding: 0;
+				margin: 0 auto;
+				width: 42em;
+				height: 24em;
+			}
+			li {
+				height: 20em;
+				width: 30em;
+				background-color: #ccc;
+				text-align: center;
+				cursor: pointer;
+			}
+				li.roundabout-in-focus {
+					cursor: default;
+				}
+			li span {
+				display: block;
+				padding-top: 6em;
+			}
+
+			#carbonads-container .carbonad {
+				margin: 0 auto;
+			}
+		</style>
+</head>
+
+<body>
+
+<h1></h1>
+<ul>
+	<li><span>Block 1</span></li>
+	<li><span>Block 2</span></li>
+	<li><span>Block 3</span></li>
+	<li><span>Block 4</span></li>
+	<li><span>Block 5</span></li>
+</ul>
+
+<div class="interact">
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.roundabout2.js"></script>
+<script>
+			$(document).ready(function() {
+				$('ul').roundabout();
+			});
+		</script>
+<div style="text-align:center;clear:both; font-size:12px;">
+
+</div>
+</body>
+
+</html>
